@@ -5,7 +5,7 @@ metadata:
   name: jx3-golang-demo-jx3-golang-demo
   labels:
     draft: draft-app
-    chart: "jx3-golang-demo-0.0.2"
+    chart: "jx3-golang-demo-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'jx3-golang-demo'
@@ -25,11 +25,11 @@ spec:
       serviceAccountName: jx3-golang-demo-jx3-golang-demo
       containers:
         - name: jx3-golang-demo
-          image: "gcr.io/serious-truck-345118/jx3-golang-demo:0.0.2"
+          image: "gcr.io/serious-truck-345118/jx3-golang-demo:0.0.3"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.2
+              value: 0.0.3
           envFrom: null
           ports:
             - name: http
