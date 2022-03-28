@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - test-jenkinsx-farenalav/jx3-demo-walk-cluster
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.34.67.134.91.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
