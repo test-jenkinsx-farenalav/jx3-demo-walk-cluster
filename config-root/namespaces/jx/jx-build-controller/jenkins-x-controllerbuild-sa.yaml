@@ -1,0 +1,15 @@
+# Source: jx-build-controller/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jenkins-x-controllerbuild
+  labels:
+    app: jx-build-controller
+    chart: jx-build-controller-0.3.11
+    release: jx-build-controller
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    iam.gke.io/gcp-service-account: tf-jx-prime-tuna-bc@serious-truck-345118.iam.gserviceaccount.com
+    meta.helm.sh/release-name: 'jx-build-controller'
+  namespace: jx
