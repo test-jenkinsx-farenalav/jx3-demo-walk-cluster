@@ -33,17 +33,17 @@
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx-staging/jx-verify
   - apiVersion: v1
-    appVersion: 0.0.1
+    appVersion: 0.0.2
     description: A Helm chart for Kubernetes
-    firstDeployed: "2022-03-28T20:20:11Z"
+    firstDeployed: "2022-03-28T20:55:32Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2022-03-28T20:20:11Z"
+    lastDeployed: "2022-03-28T20:55:32Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=serious-truck-345118&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-prime-tuna%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fjx3-golang-demo&dateRangeUnbound=both
     name: jx3-golang-demo
     repositoryName: dev
     repositoryUrl: http://chartmuseum-jx.34.67.134.91.nip.io
     resourcePath: config-root/namespaces/jx-staging/jx3-golang-demo
-    version: 0.0.1
+    version: 0.0.2
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
