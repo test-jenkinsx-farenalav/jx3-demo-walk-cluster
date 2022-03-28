@@ -18,5 +18,7 @@ releases:
   version: 0.0.1
   name: jx3-golang-demo
   namespace: jx-production
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
