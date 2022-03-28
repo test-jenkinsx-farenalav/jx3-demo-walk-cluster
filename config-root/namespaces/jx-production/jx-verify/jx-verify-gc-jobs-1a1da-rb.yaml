@@ -2,7 +2,7 @@
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: jx-verify-gc-jobs-z0wp8
+  name: jx-verify-gc-jobs-1a1da
   annotations:
     meta.helm.sh/release-name: 'jx-verify'
   namespace: jx-production
