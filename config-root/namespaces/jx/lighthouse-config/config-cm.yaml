@@ -9,6 +9,7 @@ data:
       enabled:
         test-jenkinsx-farenalav/jx3-demo-walk-cluster: true
         test-jenkinsx-farenalav/jx3-golang-demo: true
+        test-jenkinsx-farenalav/php-helloworld: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         test-jenkinsx-farenalav/jx3-demo-walk-cluster: merge
         test-jenkinsx-farenalav/jx3-golang-demo: merge
+        test-jenkinsx-farenalav/php-helloworld: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - test-jenkinsx-farenalav/jx3-demo-walk-cluster
         - test-jenkinsx-farenalav/jx3-golang-demo
+        - test-jenkinsx-farenalav/php-helloworld
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - test-jenkinsx-farenalav/jx3-demo-walk-cluster
         - test-jenkinsx-farenalav/jx3-golang-demo
+        - test-jenkinsx-farenalav/php-helloworld
       target_url: http://lighthouse-jx.34.67.134.91.nip.io/merge/status
 kind: ConfigMap
 metadata:
