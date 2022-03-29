@@ -6,9 +6,17 @@ environments:
 repositories:
 - name: jxgh
   url: https://jenkins-x-charts.github.io/repo
+- name: dev
+  url: http://chartmuseum-jx.34.67.134.91.nip.io
 releases:
 - chart: jxgh/jx-verify
   name: jx-verify
+  namespace: jx-production
+  values:
+  - jx-values.yaml
+- chart: dev/jx3-golang-demo
+  version: 0.0.2
+  name: jx3-golang-demo
   namespace: jx-production
   values:
   - jx-values.yaml
