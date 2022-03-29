@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: jx3-golang-demo
+    - name: php-helloworld
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
