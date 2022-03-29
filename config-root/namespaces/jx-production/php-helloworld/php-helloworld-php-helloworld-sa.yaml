@@ -1,0 +1,10 @@
+# Source: php-helloworld/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: php-helloworld-php-helloworld
+  annotations:
+    meta.helm.sh/release-name: 'php-helloworld'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
