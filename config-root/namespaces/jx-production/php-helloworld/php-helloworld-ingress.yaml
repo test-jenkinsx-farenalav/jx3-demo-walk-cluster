@@ -1,0 +1,22 @@
+# Source: php-helloworld/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'php-helloworld'
+  name: php-helloworld
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: php-helloworld
+                port:
+                  number: 80
+      host: php-helloworld-jx-production.34.67.134.91.nip.io
