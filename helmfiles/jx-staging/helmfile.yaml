@@ -24,5 +24,7 @@ releases:
   version: 0.0.1
   name: php-helloworld
   namespace: jx-staging
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

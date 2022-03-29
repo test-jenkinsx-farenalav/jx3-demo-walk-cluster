@@ -1,0 +1,20 @@
+# Source: php-helloworld/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: php-helloworld
+  labels:
+    chart: "php-helloworld-0.0.1"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'php-helloworld'
+  namespace: jx-staging
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      name: http
+  selector:
+    app: php-helloworld-php-helloworld
